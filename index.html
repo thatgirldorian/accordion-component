@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
         <div class="accordion-container">
+
+            <div class="info-box">
+                <h4>FAQs</h4>
+                <p>Frequently asked questions</p>
+                <p>Have questions? We're here to help.</p>
+
+                <form>
+                    <input type="search" placeholder="Search..">
+                    <button id="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
             <div class="accordion" data-theme="cheese">
             <div class="accordion__header">
                 <h2>
@@ -127,8 +143,9 @@
                 </p>
             </div>
             </div>
+
         </div>
-        <script src="js/main.js"></script>
+        <script src="js/app.js"></script>
 
     
 </body>
