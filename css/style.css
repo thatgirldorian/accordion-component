@@ -3,24 +3,29 @@
         --link-color-dark: #190070;
     }
     
-    [data-theme="cheese"] {
-        --background-color: #f3ca5f;
-        --text-color: #3a1e0e;
+    [data-theme="order"] {
+        --background-color: plum;
+        --text-color: #222222;
     }
     
-    [data-theme="lettuce"] {
+    [data-theme="shipping"] {
         --background-color: #88d28b;
         --text-color: #091e0a;
     }
     
-    [data-theme="tomato"] {
+    [data-theme="payment"] {
         --background-color: #f46e6e;
         --text-color: #1a0201;
     }
     
-    [data-theme="beef"] {
+    [data-theme="return"] {
         --background-color: #ac5a30;
         --text-color: #170005;
+    }
+
+    .fa-bag-shopping, .fa-truck-fast, .fa-credit-card, .fa-rotate-left {
+        color: black;
+        font-size: 50px;
     }
     
     html {
@@ -46,6 +51,7 @@
     
     .accordion-container {
         max-width: 30em;
+        margin: 0 auto;
     }
     
     .accordion {
@@ -115,6 +121,7 @@
     
     .accordion .indicator__minus {
         display: none;
+
     }
     
     .accordion.is-open .indicator__minus {
@@ -123,6 +130,10 @@
     
     .accordion.is-open .indicator__plus {
         display: none;
+    }
+
+    .accordion.is-open .accordion__content {
+        display: grid;
     }
     
     /* Accordion content */
@@ -141,6 +152,27 @@
         max-width: 100%;
     }
     
+    .indicator__minus .indicator__plus {
+        cursor: pointer;
+}
+
+    /* Header info styles */
+
+    .info-box {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+
+    #faq {
+        font-size: 40px;
+    }
+
+    .info-box p {
+    font-size: 16px;
+    padding-bottom: 16px;
+    font-weight: 200;
+    }
+
 
     /* Search bar styles */
     form {
