@@ -9,7 +9,7 @@ An accordion component built with pure JavaScript. I made an e-commerce version 
 - GitHub
 
 <h3>Link to site:</h3>
-
+https://thatgirldorian.github.io/faq-accordion-component/
 
 <h3>Screenshot:</h3>
 
