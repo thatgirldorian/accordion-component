@@ -1,5 +1,5 @@
 # accordion-component
-An accordion component built with pure JavaScript. I made an e-commerce version of it that you might find on an online store. It's got some information for shoppers about payments, orders and shipping. 
+An accordion component built with pure JavaScript. I made an e-commerce version of it that you might find on an online store website. It's got some information for shoppers about payments, orders and shipping. 
 
 <h3>Technology used:</h3>
 
