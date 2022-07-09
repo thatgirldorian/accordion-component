@@ -4,28 +4,32 @@
     }
     
     [data-theme="order"] {
-        --background-color: plum;
+        border: 1px solid plum;
+        border-radius: 8px;
         --text-color: #222222;
     }
     
     [data-theme="shipping"] {
-        --background-color: #88d28b;
+        border: 1px solid #88d28b;
+        border-radius: 8px;
         --text-color: #091e0a;
     }
     
     [data-theme="payment"] {
-        --background-color: #f46e6e;
+        border: 1px solid #f46e6e;
+        border-radius: 8px;
         --text-color: #1a0201;
     }
     
     [data-theme="return"] {
-        --background-color: #ac5a30;
+        border: 1px solid#ac5a30;
         --text-color: #170005;
+        border-radius: 8px;
     }
 
     .fa-bag-shopping, .fa-truck-fast, .fa-credit-card, .fa-rotate-left {
         color: black;
-        font-size: 50px;
+        font-size: 24px !important;
     }
     
     html {
@@ -58,9 +62,10 @@
         position: relative;
         background-color: var(--background-color);
         color: var(--text-color);
+        margin-bottom: 8px;
     }
     
-    .accordion::before {
+    /* .accordion::before {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -68,7 +73,7 @@
         width: 1em;
         background-color: rgba(125, 89, 69, 0.6);
         content: "";
-    }
+    } */
     
     .accordion:first-child {
         border-top-left-radius: 1.5em;
@@ -103,12 +108,29 @@
         border: 0;
         text-align: left;
     }
+
+    .accordion__header span {
+        /* color: red; */
+    }
     
     .accordion__title {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: bold;
+        display: flex;
     }
+
+    .top {
+        flex: 50%;
+        /* border: 1px solid blue; */
+        padding-right: 16px;
+    }
+
+    .top:nth-child(2) {
+        padding-top: 4px;
+    }
+
+
     
     /* Indicators */
     .accordion__indicator > * {
@@ -139,17 +161,17 @@
     /* Accordion content */
     .accordion__content {
         display: none;
-        grid-template-columns: 7.5em 1fr;
-        grid-column-gap: 1.5em;
-        align-items: center;
-        padding-right: 3em;
+        /* grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5em; */
+        /* align-items: center; */
+        padding-right: 1em;
         padding-bottom: 1.5em;
-        padding-left: 3em;
+        padding-left: 60px;
     }
-    
-    .accordion__content svg {
-        width: 10em;
-        max-width: 100%;
+
+    .accordion__content p {
+        color: #222222;
+        text-align: left;
     }
     
     .indicator__minus .indicator__plus {
