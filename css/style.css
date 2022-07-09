@@ -3,29 +3,29 @@
         --link-color-dark: #190070;
     }
     
-    [data-theme="order"] {
-        border: 1px solid plum;
+    [data-theme="order"], [data-theme="shipping"], [data-theme="payment"], [data-theme="return"] {
+        --background-color: #fff4f8;
         border-radius: 8px;
         --text-color: #222222;
     }
     
-    [data-theme="shipping"] {
-        border: 1px solid #88d28b;
+    /* [data-theme="shipping"] {
+        --background-color: #FFC8DD;
         border-radius: 8px;
         --text-color: #091e0a;
     }
     
     [data-theme="payment"] {
-        border: 1px solid #f46e6e;
+        --background-color: #FFC8DD;
         border-radius: 8px;
         --text-color: #1a0201;
     }
     
     [data-theme="return"] {
-        border: 1px solid#ac5a30;
+        --background-color: #FFC8DD;
         --text-color: #170005;
         border-radius: 8px;
-    }
+    } */
 
     .fa-bag-shopping, .fa-truck-fast, .fa-credit-card, .fa-rotate-left {
         color: black;
@@ -64,6 +64,11 @@
         color: var(--text-color);
         margin-bottom: 8px;
     }
+
+    .colorToggle {
+        --background-color: #f2f9ff;
+    }
+
     
     /* .accordion::before {
         position: absolute;
@@ -71,7 +76,7 @@
         bottom: 0;
         left: 0;
         width: 1em;
-        background-color: rgba(125, 89, 69, 0.6);
+        background-color:#A2D2FF ;
         content: "";
     } */
     
@@ -124,6 +129,7 @@
         flex: 50%;
         /* border: 1px solid blue; */
         padding-right: 16px;
+        font-weight: 400;
     }
 
     .top:nth-child(2) {
@@ -172,6 +178,8 @@
     .accordion__content p {
         color: #222222;
         text-align: left;
+        font-weight: 300;
+        font-size: 18px;
     }
     
     .indicator__minus .indicator__plus {

@@ -9,6 +9,7 @@ accordions.forEach(accordion => {
     accordionHeader.addEventListener('click', event => {
          //toggle the is-open class
             accordion.classList.toggle('is-open')
+            accordion.classList.toggle('colorToggle')
     })
 
 })
